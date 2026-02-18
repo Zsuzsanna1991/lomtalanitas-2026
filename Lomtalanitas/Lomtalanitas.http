@@ -1,0 +1,6 @@
+@Lomtalanitas_HostAddress = http://localhost:5212
+
+GET {{Lomtalanitas_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
