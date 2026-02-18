@@ -1,7 +1,7 @@
-﻿using Lomtalanitas.Data;
-using Lomtalanitas.Models;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+using Lomtalanitas.Data;
+using Lomtalanitas.Models;
 
 namespace Lomtalanitas.Controllers
 {
