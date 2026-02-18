@@ -657,5 +657,35 @@
             </tr>
         </tbody>
     </table>
+    <script>document.getElementById('button-search').addEventListener('click', async () => {
+            const query = document.getElementById('search').value.trim();
+            if (!query) return alert("Írj be egy utcanevet!");
+
+            const apiUrl = `https://localhost:7047/api/utcanev/search?name=${encodeURIComponent(query)}`;
+
+            try {
+                const response = await fetch(apiUrl);
+                if (!response.ok) {
+                    document.getElementById('results').innerHTML = "Nincs találat.";
+                    return;
+                }
+
+                const data = await response.json();
+
+                let html = '<table class="lomtabla"><tr><th>Közterület neve</th><th>Lomtalanítás dátuma</th></tr>';
+                data.forEach(item => {
+                    html += `<tr>
+                            <td>${item.utcaNev}</td>
+                            <td>${item.lomtalanitasDatum ? new Date(item.lomtalanitasDatum).toLocaleDateString() : ''}</td>
+                         </tr>`;
+                });
+                html += '</table>';
+
+                document.getElementById('results').innerHTML = html;
+            } catch (err) {
+                console.error(err);
+                document.getElementById('results').innerHTML = "Hiba történt a lekérés során.";
+            }
+        });</script>
 </body>
 </html>
