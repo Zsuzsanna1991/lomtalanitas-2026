@@ -1,0 +1,64 @@
+﻿body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 60px;
+}
+
+#search {
+    height: 60px;
+    width: 300px;
+    border: 2px solid #DEB887;
+    border-radius: 8px;
+}
+
+#button-search {
+    /*height: 20px;
+    width: 100px;*/
+    margin: 20px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    background-color: #DEB887;
+    border-radius: 8px;
+}
+
+.container {
+    padding: 0px 60px 60px 60px;
+    background-color: rgb(255, 250, 240);
+}
+
+#container-2 {
+    display: flex;
+    justify-content: center; /*vízszintesen középre*/
+    align-items: center; /*függőlegesen középre*/
+}
+
+#container-3 {
+    display: flex;
+    justify-content: center; /*vízszintesen középre*/
+    align-items: center; /*függőlegesen középre*/
+}
+
+.lomtabla {
+    width: 50%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+.lomtabla td {
+    border: 1px solid #ccc;
+    padding: 6px;
+}
+
+.korzet-fejlec td {
+    background: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+}

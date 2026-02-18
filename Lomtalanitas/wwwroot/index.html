@@ -1,0 +1,661 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8" />
+    <title>Eger Lomtalanítás 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lomtalanítás</h1>
+        <h2>2026</h2>
+        <p>Tájékoztatjuk a Tisztelt Lakosságot, hogy a MOHU MOL Zrt. szerződési feltételeinek megfelelően az Egri Hulladékgazdálkodási Nonprofit Kft. biztosítja az ingyenes lomtalanítást a lakosság részére évi egy alkalommal a 2026. évben is.</p>
+        <p>Eger városában az előző évekhez hasonlóan körzetenkénti bontásban végezzük a közterületi lomtalanítást. A körzetenként szereplő utcák listája egyaránt vonatkozik a társasházakra (bejelentési kötelezettség nincs), és a családi házakra is. A részletes utcalista mellett a lomtalanítási körzetek térképes megjelenítéssel is elérhetők, továbbá keresőmező segíti a tájékozódást, amelyben az egyes utcákra közvetlenül rá lehet keresni:</p>
+        <a href="https://www.egrihulladek.hu/images/pdf/2026/Lom%20eger%202026.png">Térkép linkje</a>
+        <div id="container-2">
+            <input id="search" type="text" placeholder="Közterület neve: ">
+        </div>
+        <div id="container-3">
+            <button id="button-search">Keresés</button>
+        </div>
+        <div id="results"></div>
+    </div>
+
+    <table class="lomtabla" style="width: 768px; height: 1020px;">
+        <tbody>
+            <tr class="korzet-fejlec">
+                <td colspan="5"><strong>I. körzet - 2026.03.21.</strong></td>
+            </tr>
+            <tr>
+                <td>Akácfa u.</td>
+                <td>Bervai ltp.</td>
+                <td>Felvégi út</td>
+                <td>Madárkút út</td>
+                <td>Sólyom út</td>
+            </tr>
+            <tr>
+                <td>Almár</td>
+                <td>Bervai út</td>
+                <td>Fenyő út</td>
+                <td>Mályva út</td>
+                <td>Szarvaskői út</td>
+            </tr>
+            <tr>
+                <td>Almárvölgyi u.</td>
+                <td>Boross E. u.</td>
+                <td>Hársfa út</td>
+                <td>Pásztorvölgy út</td>
+                <td>Szélpart út</td>
+            </tr>
+            <tr>
+                <td>Alvégi út</td>
+                <td>Borsod u.</td>
+                <td>Hóvirág út</td>
+                <td>Pirittyó út</td>
+                <td>Szérűskert út</td>
+            </tr>
+            <tr>
+                <td>Apátfalvi út</td>
+                <td>Cinca út</td>
+                <td>József A. út</td>
+                <td>Posta köz</td>
+                <td>Tárkányi út</td>
+            </tr>
+            <tr>
+                <td>Bajuszi út</td>
+                <td>Csalogány út</td>
+                <td>Kisdelelő út</td>
+                <td>Sánc köz</td>
+                <td>Telepi út</td>
+            </tr>
+            <tr>
+                <td>Béke utca</td>
+                <td>Egri út</td>
+                <td>Kovács Jakab út</td>
+                <td>Sánc út</td>
+                <td>Tölgy út</td>
+            </tr>
+            <tr>
+                <td>Bervai köz</td>
+                <td>Fecske út</td>
+                <td>Lágyas út</td>
+                <td>Sáncalja út</td>
+                <td>Vadrózsa u.</td>
+            </tr>
+            <tr class="korzet-fejlec">
+                <td colspan="5"><strong>II. körzet - 2026.04.18.</strong></td>
+            </tr>
+            <tr>
+                <td>Almási P. út</td>
+                <td>Farkasvár út</td>
+                <td>Kálnoky u.</td>
+                <td>Mindszenti G. út</td>
+                <td>Tizeshonvéd u.</td>
+            </tr>
+            <tr>
+                <td>Ankli József út</td>
+                <td>Fejedelem út</td>
+                <td>Kandra Kabos út</td>
+                <td>Móricz Zs. út</td>
+                <td>Tordai Á. út</td>
+            </tr>
+            <tr>
+                <td>Babocsay út</td>
+                <td>Garay J. út</td>
+                <td>Kilián út</td>
+                <td>Paphegy út</td>
+                <td>Tulipánkert u.</td>
+            </tr>
+            <tr>
+                <td>Baktai út</td>
+                <td>Gorové út</td>
+                <td>Király út</td>
+                <td>Pázmány P. út</td>
+                <td>Váci M. út</td>
+            </tr>
+            <tr>
+                <td>Bartalos út</td>
+                <td>Gyóni út</td>
+                <td>Kisasszony út</td>
+                <td>Petőfi S. út</td>
+                <td>Vak B. út</td>
+            </tr>
+            <tr>
+                <td>Bem tábornok út</td>
+                <td>Gyöngy út</td>
+                <td>Kisfaludy S. út</td>
+                <td>Radnóti M. út</td>
+                <td>Vámház u.</td>
+            </tr>
+            <tr>
+                <td>Bercsényi M. út</td>
+                <td>Hajdúhegy út</td>
+                <td>Kisvölgy út</td>
+                <td>Rajner K. út</td>
+                <td>Verseghy F. u.</td>
+            </tr>
+            <tr>
+                <td>Bethlen G. út</td>
+                <td>Hatvanas ezred út</td>
+                <td>Kőkút út</td>
+                <td>Rózsásdűlő u.</td>
+                <td>Blaskovics Gy. út</td>
+            </tr>
+            <tr>
+                <td>Epreskert út</td>
+                <td>Hét vezér út</td>
+                <td>Laktanya u.</td>
+                <td>Szalóki út</td>
+                <td>Hősök út</td>
+            </tr>
+            <tr>
+                <td>Csokonai út</td>
+                <td>Hevesi S. út</td>
+                <td>Liliomkert u.</td>
+                <td>Szederkényi N. út</td>
+                <td>Mikes K. út</td>
+            </tr>
+            <tr>
+                <td>Endresz út</td>
+                <td>Honfoglalás út</td>
+                <td>Mester út</td>
+                <td>Szépasszony-völgy</td>
+                <td>Szépasszony-völgy út</td>
+            </tr>
+            <tr class="korzet-fejlec">
+                <td colspan="5"><strong>III. körzet - 2026.05.16.</strong></td>
+            </tr>
+            <tr>
+                <td>Ágas u.</td>
+                <td>Darvas út</td>
+                <td>Gárdonyi út</td>
+                <td>Mekcsey út</td>
+                <td>Talizmán út</td>
+            </tr>
+            <tr>
+                <td>András Bíró út</td>
+                <td>Dézsmaház út</td>
+                <td>Íj u.</td>
+                <td>Mlinkó M. út</td>
+                <td>Tetemvár út</td>
+            </tr>
+            <tr>
+                <td>Bálint pap u.</td>
+                <td>Domokos út</td>
+                <td>Janicsár út</td>
+                <td>Nagy-Eged út</td>
+                <td>Vécsey völgy</td>
+            </tr>
+            <tr>
+                <td>Bástya út</td>
+                <td>Donát út</td>
+                <td>Joó J. út</td>
+                <td>Ostrom út</td>
+                <td>Zoltay út</td>
+            </tr>
+            <tr>
+                <td>Bérc út</td>
+                <td>Egri Csillagok út</td>
+                <td>Kelemen köz</td>
+                <td>Partos út</td>
+                <td>Zöldfa út</td>
+            </tr>
+            <tr>
+                <td>Bolyki út</td>
+                <td>Faggyas út</td>
+                <td>Kis-Eged út</td>
+                <td>Pást út</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Bornemissza út</td>
+                <td>Félhold út</td>
+                <td>Leányka út</td>
+                <td>Pázsit út</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Buzogány u.</td>
+                <td>Fügedy J. út</td>
+                <td>Liget u.</td>
+                <td>Pető G. út</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Cecey Éva út</td>
+                <td>Füzér út</td>
+                <td>Literáti u.</td>
+                <td>Szabó S. út</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr class="korzet-fejlec">
+                <td colspan="5"><strong>IV. körzet - 2026.06.13.</strong></td>
+            </tr>
+            <tr>
+                <td>Berzsenyi D. út</td>
+                <td>Gyulafehérvári út</td>
+                <td>Kőlyuk völgy</td>
+                <td>Nagyváradi út</td>
+                <td>Tompa M. út</td>
+            </tr>
+            <tr>
+                <td>Brassói út</td>
+                <td>Kárpát utca</td>
+                <td>Külsősor út</td>
+                <td>Puky M. út</td>
+                <td>Vajda J. út</td>
+            </tr>
+            <tr>
+                <td>Breznay út</td>
+                <td>Kazinczy út</td>
+                <td>Liszt F. út</td>
+                <td>Szabadkai út</td>
+                <td>Veres P. út</td>
+            </tr>
+            <tr>
+                <td>Fadrusz út</td>
+                <td>Keglevich út</td>
+                <td>Madách I. út</td>
+                <td>Székelyudvarhelyi út</td>
+                <td>Zólyomi út</td>
+            </tr>
+            <tr>
+                <td>Faiskola út</td>
+                <td>Kistályai út</td>
+                <td>Munkácsy M. út</td>
+                <td>Szövetkezet út</td>
+                <td>Zombori út</td>
+            </tr>
+            <tr>
+                <td>Gyetvai J. u.</td>
+                <td>Kölcsey F. tér</td>
+                <td>Nagy László u.</td>
+                <td>Temesvári út</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr class="korzet-fejlec">
+                <td colspan="5"><strong>V. körzet - 2026.07.11.</strong></td>
+            </tr>
+            <tr>
+                <td>Albert F. út</td>
+                <td>Eperjesi út</td>
+                <td>Kassai út</td>
+                <td>Nyitrai út</td>
+                <td>Szüret út</td>
+            </tr>
+            <tr>
+                <td>Aradi út</td>
+                <td>Fertőbánya út</td>
+                <td>Kiskanda utca</td>
+                <td>Pápai S. út</td>
+                <td>Tátra út</td>
+            </tr>
+            <tr>
+                <td>Attila út</td>
+                <td>Fiumei u.</td>
+                <td>Kolozsvári út</td>
+                <td>Pozsonyi út</td>
+                <td>Vincellériskola út</td>
+            </tr>
+            <tr>
+                <td>Berze Nagy János u.</td>
+                <td>Galagonyás út</td>
+                <td>Körmöcbányai út</td>
+                <td>Rozsnyói út</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Csordás út</td>
+                <td>Ifjúság út</td>
+                <td>Köztársaság tér</td>
+                <td>Széna tér</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Deméndi út</td>
+                <td>Iglói út</td>
+                <td>Lőcsei út</td>
+                <td>Szénáskert út</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Déva út</td>
+                <td>István Király út</td>
+                <td>Mátyás király út</td>
+                <td>Szőlő utca</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr class="korzet-fejlec">
+                <td colspan="5"><strong>VI. körzet - 2026.08.08.</strong></td>
+            </tr>
+            <tr>
+                <td>Árok köz</td>
+                <td>Kallómalom út</td>
+                <td>Olasz út</td>
+                <td>Tavasz út</td>
+                <td>Vízimolnár út</td>
+            </tr>
+            <tr>
+                <td>Borsitz J. út</td>
+                <td>Ludányi út</td>
+                <td>Rákóczi út páros oldal</td>
+                <td>Tiba út</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Ceglédi út</td>
+                <td>Malom út</td>
+                <td>Régi Cifrakapu út</td>
+                <td>Türk F. út</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Cifrakapu út</td>
+                <td>Malomárok út</td>
+                <td>Rezeda u.</td>
+                <td>Vallon út</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr class="korzet-fejlec">
+                <td colspan="5"><strong>VII. körzet - 2026.09.12.</strong></td>
+            </tr>
+            <tr>
+                <td>Almagyar köz</td>
+                <td>Dr. Sándor I. u.</td>
+                <td>Karéj út</td>
+                <td>Petőfi S. tér</td>
+                <td>Tárkányi B. út</td>
+            </tr>
+            <tr>
+                <td>Almagyar út</td>
+                <td>Egészségház út</td>
+                <td>Katona tér</td>
+                <td>Pyrker tér</td>
+                <td>Tavassy A. út</td>
+            </tr>
+            <tr>
+                <td>Árva köz</td>
+                <td>Érsek út</td>
+                <td>Klapka Gy. út</td>
+                <td>Pori sétány</td>
+                <td>Tinódi S. tér</td>
+            </tr>
+            <tr>
+                <td>Bajcsy Zs. Endre út</td>
+                <td>Eszterházy tér</td>
+                <td>Knézich K. út</td>
+                <td>Rottenstein köz</td>
+                <td>Torok köz</td>
+            </tr>
+            <tr>
+                <td>Balassi út</td>
+                <td>Fazola Henrik u.</td>
+                <td>Kossuth L. út</td>
+                <td>Servita út</td>
+                <td>Torony út</td>
+            </tr>
+            <tr>
+                <td>Bárány út</td>
+                <td>Fellner Jakab u.</td>
+                <td>Kovács János. u.</td>
+                <td>Síp köz</td>
+                <td>Tűzoltó tér</td>
+            </tr>
+            <tr>
+                <td>Bródy S. út</td>
+                <td>Foglár út</td>
+                <td>Lejtő út</td>
+                <td>Stadion út</td>
+                <td>Városfal u.</td>
+            </tr>
+            <tr>
+                <td>Cifrakapu tér</td>
+                <td>Fürdő u.</td>
+                <td>Lenkey J. út</td>
+                <td>Szaicz Leó út</td>
+                <td>Vécsey S. út</td>
+            </tr>
+            <tr>
+                <td>Cifrapart út</td>
+                <td>Gerl M. út</td>
+                <td>Lenkey udvar</td>
+                <td>Szálloda út</td>
+                <td>Zalár út</td>
+            </tr>
+            <tr>
+                <td>Csurgó út</td>
+                <td>Gólya út</td>
+                <td>Maczky V. út</td>
+                <td>Széchenyi út</td>
+                <td>Zseb köz</td>
+            </tr>
+            <tr>
+                <td>Dayka G. út</td>
+                <td>Görög út</td>
+                <td>Mária út</td>
+                <td>Szent János út</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Dobó tér</td>
+                <td>Harangöntő út</td>
+                <td>Markhot F. út</td>
+                <td>Szent Miklós u.</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Dobó út</td>
+                <td>Jankovics D. út</td>
+                <td>Mecset út</td>
+                <td>Szolárcsik út</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Dr. Hibay K. út</td>
+                <td>Jókai M. út</td>
+                <td>Pallos út</td>
+                <td>Szúnyog köz</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="5"><strong>VIII. körzet - 2026.10.10.</strong></td>
+            </tr>
+            <tr>
+                <td>Ady E. út</td>
+                <td>Homok utca</td>
+                <td>Kötő u.</td>
+                <td>Ostorosi út</td>
+                <td>Tihaméri út</td>
+            </tr>
+            <tr>
+                <td>Agyagos u.</td>
+                <td>Hontalan út</td>
+                <td>Lájer D. út</td>
+                <td>Patakpart út</td>
+                <td>Tímár út</td>
+            </tr>
+            <tr>
+                <td>Állomás tér</td>
+                <td>Ipolyi A. út</td>
+                <td>Legányi F. út</td>
+                <td>Raktár út</td>
+                <td>Tinódi s. út</td>
+            </tr>
+            <tr>
+                <td>Bajza út</td>
+                <td>Ív út</td>
+                <td>Maklári út</td>
+                <td>Rókus köz</td>
+                <td>Tittel P. út</td>
+            </tr>
+            <tr>
+                <td>Csákány út</td>
+                <td>Kádas G. u.</td>
+                <td>Meder út</td>
+                <td>Rókus u.</td>
+                <td>Újsor út</td>
+            </tr>
+            <tr>
+                <td>Csákósor út</td>
+                <td>Kalcit-Köz</td>
+                <td>Mély út</td>
+                <td>Rozália köz</td>
+                <td>Vasöntő út</td>
+            </tr>
+            <tr>
+                <td>Diófakút út</td>
+                <td>Károlyi M. út</td>
+                <td>Menház út</td>
+                <td>Rozália út</td>
+                <td>Vasút út</td>
+            </tr>
+            <tr>
+                <td>Eötvös út</td>
+                <td>Kékfrankos u.</td>
+                <td>Merengő út</td>
+                <td>Rövid út</td>
+                <td>Zellervár út</td>
+            </tr>
+            <tr>
+                <td>Folyás u.</td>
+                <td>Kertész út</td>
+                <td>Mocsáry L. út</td>
+                <td>Sas út</td>
+                <td>Zúgó út</td>
+            </tr>
+            <tr>
+                <td>Frank T. út</td>
+                <td>Kis Merengő u.</td>
+                <td>Nagykőporos u.</td>
+                <td>Szarvas tér</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Hadnagy út</td>
+                <td>Kocsis Bernát. út</td>
+                <td>Nagyrét út</td>
+                <td>Szellő út</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Hell M. út</td>
+                <td>Kodály Z. út</td>
+                <td>Napsugár köz</td>
+                <td>Szeszfőzde út</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Hild J. út</td>
+                <td>Kőporos tér</td>
+                <td>Napsugár út</td>
+                <td>Tibrikdűlő u.</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="5"><strong>IX. körzet - 2026.11.07.</strong></td>
+            </tr>
+            <tr>
+                <td>Arany J. út</td>
+                <td>Dr. Nagy J. u.</td>
+                <td>Papkert u.</td>
+                <td>Reményi tér</td>
+                <td>Telekessy út</td>
+            </tr>
+            <tr>
+                <td>Árpád út</td>
+                <td>Farkasvölgy út</td>
+                <td>Koszorú út</td>
+                <td>Remenyik Zs. út</td>
+                <td>Tévesztő köz</td>
+            </tr>
+            <tr>
+                <td>Barkóczy u.</td>
+                <td>Gerinc út</td>
+                <td>Kracker udvar</td>
+                <td>Rózsa Károly u.</td>
+                <td>Törvényház út</td>
+            </tr>
+            <tr>
+                <td>Bartakovics u.</td>
+                <td>Grónay S. út</td>
+                <td>Mikszáth K. út</td>
+                <td>Sasvár út</td>
+                <td>Trinitárius út</td>
+            </tr>
+            <tr>
+                <td>Bartók B. tér</td>
+                <td>Hatvani kapu tér</td>
+                <td>Neumayer út</td>
+                <td>Sertekapu út</td>
+                <td>Tündérpart u.</td>
+            </tr>
+            <tr>
+                <td>Bocskai út</td>
+                <td>Kacsapart u.</td>
+                <td>Nyíl út</td>
+                <td>Sóház út</td>
+                <td>Vitkovics út</td>
+            </tr>
+            <tr>
+                <td>Csiky Sándor u.</td>
+                <td>Kapás út</td>
+                <td>Orgonás tér</td>
+                <td>Szarvas G. út</td>
+                <td>Vörösmarty út</td>
+            </tr>
+            <tr>
+                <td>Deák F. út</td>
+                <td>Koháry út</td>
+                <td>Pacsirta út</td>
+                <td>Szvorényi út</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="5"><strong>X. körzet - 2026.11.14.</strong></td>
+            </tr>
+            <tr>
+                <td>Alma utca</td>
+                <td>Dr. Kapor E. u.</td>
+                <td>Kő út</td>
+                <td>Ráchegy út</td>
+                <td>Szala köz</td>
+            </tr>
+            <tr>
+                <td>Árnyékszala utca</td>
+                <td>Erdélyi É. u.</td>
+                <td>Könyök út</td>
+                <td>Rácliget út</td>
+                <td>Szalapart út</td>
+            </tr>
+            <tr>
+                <td>Bitskey A. u.</td>
+                <td>Gerle köz</td>
+                <td>Kővágó tér</td>
+                <td>Rákóczi út páratlan oldal</td>
+                <td>Töviskes tér</td>
+            </tr>
+            <tr>
+                <td>Bükk sétány</td>
+                <td>Harangláb út</td>
+                <td>Liliom u.</td>
+                <td>Rigó köz</td>
+                <td>Töviskes út</td>
+            </tr>
+            <tr>
+                <td>Dr. Bakó F. u.</td>
+                <td>Iskola út</td>
+                <td>Lovász út</td>
+                <td>Rudivár u.</td>
+                <td>Verőszala utca</td>
+            </tr>
+            <tr>
+                <td>Dr. Frank Mária u.</td>
+                <td>Kertalja út</td>
+                <td>Pócsik D. u.</td>
+                <td>Sugár István u.</td>
+                <td>&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
