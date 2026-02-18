@@ -661,7 +661,7 @@
             const query = document.getElementById('search').value.trim();
             if (!query) return alert("Írj be egy utcanevet!");
 
-            const apiUrl = `https://localhost:7047/api/utcanev/search?name=${encodeURIComponent(query)}`;
+            const apiUrl = `https://localhost:7048/api/utcanev/search?name=${encodeURIComponent(query)}`;
 
             try {
                 const response = await fetch(apiUrl);
